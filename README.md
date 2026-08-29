@@ -11,7 +11,7 @@ that effect **generalises across frontier model families**. The experiment
 runs on the [EvilGenie](https://github.com/JonathanGabor/evilgenie_inspect)
 reward-hacking benchmark (Gabor, Lynch & Rosenfeld, 2025,
 [arXiv:2511.21654](https://arxiv.org/abs/2511.21654)) and extends the
-escalation-channel result of Gomez et al. (2025,
+escalation-channel result of Gomez (2025,
 [arXiv:2510.05192](https://arxiv.org/abs/2510.05192)) from the
 agentic-misalignment setting into the coding domain.
 
