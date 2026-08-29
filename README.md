@@ -188,7 +188,7 @@ et al., arXiv:2510.05192), and LiveCodeBench.
 
 MIT — see [LICENSE](LICENSE). This repository extends
 [EvilGenie](https://github.com/JonathanGabor/evilgenie_inspect) (MIT,
-© 2026 Jonathan Gabor); that notice is retained in the license file.
+© 2026 Jonathan Gabor); see [NOTICE](NOTICE) for the retained attribution.
 
 ## Acknowledgements
 

@@ -1,0 +1,12 @@
+This repository extends the EvilGenie reward-hacking benchmark:
+
+    EvilGenie — https://github.com/JonathanGabor/evilgenie_inspect
+    Copyright (c) 2026 Jonathan Gabor
+    MIT License
+
+Portions of the task, dataset, and scoring code are derived from EvilGenie and
+remain under its MIT License. The EvilGenie copyright notice is retained here
+in accordance with that license.
+
+The experiment problems are drawn from LiveCodeBench
+(https://livecodebench.github.io/).
