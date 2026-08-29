@@ -181,8 +181,7 @@ from a local copy of the raw `.eval` logs.
 ```
 
 The paper link will be added once it is posted. Please also cite the EvilGenie
-benchmark (arXiv:2511.21654), the escalation-channel work it builds on (Gomez
-et al., arXiv:2510.05192), and LiveCodeBench.
+benchmark (arXiv:2511.21654), the escalation-channel work it builds on (Gomez, arXiv:2510.05192), and LiveCodeBench.
 
 ## License
 
