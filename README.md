@@ -159,7 +159,7 @@ results — ~9 GB across ~130 runs and ~20 models) and all derived data
 (row-level results CSV, per-sample corrected verdicts, disclosure-channel
 tables, cost tables) are published as a Hugging Face dataset:
 
-**[to be added]**
+**https://huggingface.co/datasets/WiserHumanExperimenatal/evilgenie-escalation**
 
 Download it into `./data/` (or `./results/` for the `.eval` logs) to re-run
 the analysis and verification scripts. Every statistic in the paper can be
