@@ -1,0 +1,27 @@
+# Exact versions used for the paper's runs (from the original uv.lock):
+#   inspect-ai 0.3.213 · datasets 3.6.0 · numpy 2.3.5 · scipy 1.18.0
+#   statsmodels 0.14.6 · jinja2 3.1.6 · anthropic 0.97.0 · openai 2.32.0
+# `uv sync` resolves a compatible set; pin exactly if you need bit-for-bit repro.
+
+[project]
+name = "evilgenie-escalation"
+version = "1.0.0"
+description = "Can escalation channels redirect reward hacking toward defect disclosure? Code + analysis for the paper."
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "anthropic>=0.75.0",
+    "datasets<4",
+    "inspect-ai>=0.3.153",
+    "jinja2>=3.1.6",
+    "numpy>=2.0",
+    "openai>=2.14.0",
+    "scipy>=1.13",
+    "statsmodels>=0.14.6",
+    "zipfile-zstd>=0.0.4",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
