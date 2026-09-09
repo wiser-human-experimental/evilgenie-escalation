@@ -704,14 +704,6 @@ _SUMMARY_CACHE = None
 SUMMARY_EXCLUDE_MODELS = {
     model_key for dirname, (model_key, _letter, _sp) in SPECIAL_DIRS.items()
     if not dirname.startswith("condition_")
-} | {
-    # Excluded 2026-08-07: reported to be a heavily
-    # fine-tuned model, which threatens comparability with the rest of the
-    # roster for this study's purposes. Data is kept (results/ untouched,
-    # ground_truth_results.json rows kept) -- excluded from aggregate/
-    # summary computation only, same mechanism as the pseudo-models above,
-    # not deleted.
-    "kwaipilot-kat-coder-pro-v2.5",
 }
 
 

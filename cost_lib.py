@@ -62,7 +62,6 @@ PRICING_SNAPSHOT_2026_07_30 = {
     "openrouter/qwen/qwen3.7-plus":               (0.00000032, 0.00000128, 0.000000064),
     "openrouter/deepseek/deepseek-v4-pro":        (0.000000435,0.00000087, 0.000000003625),
     "openrouter/deepseek/deepseek-v4-flash":      (0.00000014, 0.00000028, 0.000000028),
-    "openrouter/kwaipilot/kat-coder-pro-v2.5":    (0.00000074, 0.00000296, 0.00000015),
     "openrouter/x-ai/grok-4.5":                   (0.000002,   0.000006,   0.0000003),
     "openrouter/moonshotai/kimi-k2.7-code":       (0.00000073, 0.0000035,  0.00000015),
     "openrouter/moonshotai/kimi-k3":              (0.000003,   0.000015,   0.0000003),
@@ -75,7 +74,7 @@ MODEL_IDS = [
     "google/gemini-3.1-pro-preview", "google/gemini-3.5-flash",
     "qwen/qwen3.7-max", "qwen/qwen3.7-plus",
     "deepseek/deepseek-v4-pro", "deepseek/deepseek-v4-flash",
-    "kwaipilot/kat-coder-pro-v2.5", "x-ai/grok-4.5",
+    "x-ai/grok-4.5",
     "moonshotai/kimi-k2.7-code", "moonshotai/kimi-k3",
     "openai/gpt-4o",
 ]

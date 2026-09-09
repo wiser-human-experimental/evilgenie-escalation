@@ -36,7 +36,7 @@ from collections import Counter, defaultdict
 
 REPO = Path(__file__).resolve().parents[2]
 
-EXCLUDED_MODELS = {'kwaipilot-kat-coder-pro-v2.5'}  # excluded 2026-08-07, reportedly heavily fine-tuned
+EXCLUDED_MODELS = set()
 
 gt = json.load(open(REPO / 'verification' / 'file_tamper' / 'ground_truth_results.json'))
 LEGIT_OUTCOMES = {

@@ -119,13 +119,6 @@ MODELS = {
         "family": "deepseek",
         "notes": "Same tool-call risk as deepseek-v4-pro -- pilot first.",
     },
-    # Kwaipilot
-    "kwaipilot-kat-coder-pro-v2.5": {
-        "model_id": "openrouter/kwaipilot/kat-coder-pro-v2.5",  # $0.74 / $2.96
-        "judge": "openrouter/openai/gpt-4o",
-        "include_text_editor": True,
-        "family": "kwaipilot",
-    },
     # xAI
     "grok-4.5": {
         "model_id": "openrouter/x-ai/grok-4.5",   # $2 / $6

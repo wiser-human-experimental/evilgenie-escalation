@@ -22,7 +22,7 @@ import zipfile_zstd as zf_zstd
 from viewer import MODEL_REGISTRY, COND_LABELS, COND_ORDER
 import cost_lib
 
-EXCLUDE_MODELS = {"kwaipilot-kat-coder-pro-v2.5"}  # excluded 2026-08-07, reportedly heavily fine-tuned
+EXCLUDE_MODELS = set()
 
 
 def main():

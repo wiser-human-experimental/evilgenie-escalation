@@ -4,8 +4,7 @@ FINAL SUBMITTED ANSWER, disclosure_pass1_prompt.py) -- the population this
 project's `disclosed` figures have always used the flaw_signatures.py regex
 for instead. Same main-population scope as monitoring's Pass 1: all 9
 ambiguous-set problems, every model/condition/epoch, excluding the two
-auxiliary gpt-5.3-codex populations (different experiment) and
-kwaipilot-kat-coder-pro-v2.5 (dropped 2026-08-07).
+auxiliary gpt-5.3-codex populations (different experiment).
 
 Samples with no submitted answer, or a near-empty one (< 20 chars -- e.g.
 a bare placeholder with nothing for a classifier to find), are labeled
@@ -29,7 +28,6 @@ from disclosure_pass1_prompt import build_request
 EXCLUDE_MODELS = {
     "gpt-5.3-codex — unambiguous (negative control)",
     "gpt-5.3-codex — hack-prone-unambiguous screening (abandoned)",
-    "kwaipilot-kat-coder-pro-v2.5",
 }
 MIN_ANSWER_CHARS = 20
 MODEL_NAME = "gpt-4o-2024-08-06"

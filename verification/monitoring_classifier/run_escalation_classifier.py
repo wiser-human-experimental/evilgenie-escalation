@@ -7,9 +7,7 @@ No decoy arm -- see esc_pass2_prompt.py's module docstring for why.
 
 Excludes the same models Pass 1/Pass 2 exclude from their own re-runs:
 the two auxiliary gpt-5.3-codex populations (unambiguous negative control /
-abandoned screening -- a different experimental population) and
-kwaipilot-kat-coder-pro-v2.5 (dropped 2026-08-07, reportedly heavily
-fine-tuned).
+abandoned screening -- a different experimental population).
 
 Usage: source .venv/bin/activate && python3 verification/monitoring_classifier/run_escalation_classifier.py
 Writes: verification/monitoring_classifier/esc_pass2_results.json
@@ -30,7 +28,6 @@ MODEL_NAME = "gpt-4o-2024-08-06"
 EXCLUDE_MODELS = {
     "gpt-5.3-codex — unambiguous (negative control)",
     "gpt-5.3-codex — hack-prone-unambiguous screening (abandoned)",
-    "kwaipilot-kat-coder-pro-v2.5",
 }
 
 

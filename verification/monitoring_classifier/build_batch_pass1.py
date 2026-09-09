@@ -40,10 +40,6 @@ from pass1_prompt import build_request
 SUMMARY_EXCLUDE_MODELS = {
     "gpt-5.3-codex — unambiguous (negative control)",
     "gpt-5.3-codex — hack-prone-unambiguous screening (abandoned)",
-    "kwaipilot-kat-coder-pro-v2.5",  # excluded 2026-08-07 -- reportedly heavily fine-tuned.
-    # NOT re-run after this change -- pass1_results.json already has kwaipilot's
-    # (paid-for) rows; downstream analysis scripts filter it out at aggregation
-    # time instead of re-spending to regenerate the batch.
 }
 ECOLOGICAL_FP_MODEL = "gpt-5.3-codex — unambiguous (negative control)"
 ECOLOGICAL_FP_CLEAN_PROBLEMS = [

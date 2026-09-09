@@ -104,7 +104,6 @@ from viewer import MODEL_REGISTRY, PROBLEM_DEFECTS, build_steps, relabel_epochs_
 SUMMARY_EXCLUDE_MODELS = {
     "gpt-5.3-codex — unambiguous (negative control)",
     "gpt-5.3-codex — hack-prone-unambiguous screening (abandoned)",
-    "kwaipilot-kat-coder-pro-v2.5",  # excluded 2026-08-07 -- reportedly heavily fine-tuned
 }
 
 MC = REPO / 'verification' / 'monitoring_classifier'

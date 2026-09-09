@@ -169,19 +169,23 @@ uv run python -m verification.validators.abc397d_validator
 
 ## Data
 
-The raw Inspect `.eval` logs (agent transcripts, judge reasoning, per-test
-results — ~9 GB across ~130 runs and ~20 models) and all derived data
-(row-level results CSV, per-sample corrected verdicts, disclosure-channel
-tables, cost tables) are published as a Hugging Face dataset:
+Stripped run transcripts (JSONL, one file per model×condition) and per-sample
+analysis tables — row-level results, corrected verdicts, disclosure-channel
+detections, classifier outputs, cost reconstruction — are published as a
+Hugging Face dataset:
 
 **https://huggingface.co/datasets/WiserHumanExperimental/evilgenie-escalation**
 
-Download it into `./data/` (or `./results/` for the `.eval` logs) to re-run
-the analysis and verification scripts. Every statistic in the paper can be
-regenerated from the row-level results table alone, without the full logs.
+We publish per-sample source data, not our own aggregated rollups, so any
+reported statistic can be independently recomputed rather than trusted as a
+rollup. The paper's headline design runs 8 models across all five conditions;
+two further models (`claude-opus-4.8`, `kimi-k3`) are included at condition A
+only, from an earlier exploratory pass not carried into the full factorial.
 
-`build_hf_dataset.py` regenerates that release (stripped transcripts + tables)
-from a local copy of the raw `.eval` logs.
+Download the dataset into `./data/` to re-run the analysis and verification
+scripts against it. The full raw Inspect `.eval` logs (agent transcripts
+before stripping, judge reasoning, per-test results) are available on
+request.
 
 ## Citing
 
