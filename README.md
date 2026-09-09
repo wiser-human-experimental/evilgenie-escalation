@@ -2,7 +2,9 @@
 
 Code and analysis for the paper *"Can escalation channels redirect reward
 hacking toward defect disclosure?"* (F. Gomez, Wiser Human, 2026).
-**Paper:** [to be added]
+**Paper:** [arXiv:2608.29460](https://arxiv.org/abs/2608.29460) ·
+**Blog post:** [wiserhuman.ai](https://blog.wiserhuman.ai/p/can-escalation-channels-redirect) ·
+**Plain-language writeup:** [wiserhuman.ai/research/rewardhacking](https://www.wiserhuman.ai/research/rewardhacking/)
 
 We test whether giving a coding agent a **structured escalation channel** — a
 legitimate way to report *"I can't solve this correctly"* — together with an
@@ -14,6 +16,19 @@ reward-hacking benchmark (Gabor, Lynch & Rosenfeld, 2025,
 escalation-channel result of Gomez (2025,
 [arXiv:2510.05192](https://arxiv.org/abs/2510.05192)) from the
 agentic-misalignment setting into the coding domain.
+
+## Headline result
+
+Combining an escalation channel with an anti-reward-hacking policy reduced
+reward hacking from 23.6% to 5.3% across 8 frontier models spanning 5
+families (OR = 9.2, p < 10⁻¹²), eliminating it entirely for 6 of 8 models,
+with no detectable cost or performance overhead. Escalation and hacking were
+near-perfectly mutually exclusive — 98.7% of escalation events involved no
+hacking, rising to 100% under the combined condition — and escalation reports
+added +10.1 percentage points of defect-detection coverage on top of
+monitoring alone, at higher accuracy (99.4% vs 85.8%). The sections below
+cover how that number was produced; the repository layout section is the
+fastest way to find the code behind any specific claim in the paper.
 
 ## What the experiment does
 
@@ -159,7 +174,7 @@ results — ~9 GB across ~130 runs and ~20 models) and all derived data
 (row-level results CSV, per-sample corrected verdicts, disclosure-channel
 tables, cost tables) are published as a Hugging Face dataset:
 
-**https://huggingface.co/datasets/WiserHumanExperimenatal/evilgenie-escalation**
+**https://huggingface.co/datasets/WiserHumanExperimental/evilgenie-escalation**
 
 Download it into `./data/` (or `./results/` for the `.eval` logs) to re-run
 the analysis and verification scripts. Every statistic in the paper can be
@@ -176,12 +191,13 @@ from a local copy of the raw `.eval` logs.
   author      = {Gomez, F.},
   institution = {Wiser Human},
   year        = {2026},
-  url         = {[to be added]}
+  url         = {https://arxiv.org/abs/2608.29460}
 }
 ```
 
-The paper link will be added once it is posted. Please also cite the EvilGenie
-benchmark (arXiv:2511.21654), the escalation-channel work it builds on (Gomez, arXiv:2510.05192), and LiveCodeBench.
+Please also cite the EvilGenie benchmark (arXiv:2511.21654), the
+escalation-channel work it builds on (Gomez, arXiv:2510.05192), and
+LiveCodeBench.
 
 ## License
 
